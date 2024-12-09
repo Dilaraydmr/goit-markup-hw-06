@@ -210,7 +210,6 @@ body {
 }
 .section-two-li {
   width: calc((100% - 72px) / 4);
-  flex-basis: calc((100% - 72px) / 4);
 }
 
 .icon-container {
@@ -346,15 +345,15 @@ body {
 
 .social-list-li {
   list-style-type: none;
-  width: 40px;
-  height: 40px;
+  width: auto;
+  height: auto;
   justify-content: center;
   display: inline-block;
 }
 
 .social-link {
-  width: 100%;
-  height: 100%;
+  width: 40px;
+  height: 40px;
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 50%;
@@ -728,9 +727,10 @@ body {
 
 /* TABLET */
 
-@media screen and (min-width: 768px) and (max-width: 1157px) {
+@media (min-width: 768px) and (max-width: 1157px) {
   .container {
     width: 100%;
+    max-width: 1157px;
   }
 
   .header-about .container {
@@ -786,10 +786,12 @@ body {
   }
 
   .section-two-ul {
-    display: wrap;
+    display: flex;
+    flex-wrap: wrap;
   }
   .section-two-li {
     width: calc((100% - 24px) / 2);
+    padding: auto 0;
   }
 
   .icon-container {
@@ -805,5 +807,65 @@ body {
   }
   .section-two-text {
     font-weight: 500;
+  }
+  .section-three {
+    padding: 96px 0;
+  }
+
+  .section-three-list {
+    width: 264px;
+  }
+  .section-three-container {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 64px;
+    justify-content: center;
+    margin-left: calc((100% - 552px) / 2);
+    margin-right: calc((100% - 552px) / 2);
+    padding-left: 0;
+  }
+  .section-four {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc((100% - 736px) / 2);
+    margin-right: calc((100% - 736px) / 2);
+    row-gap: 64px;
+    padding-left: 0;
+  }
+  .section-four-li {
+    width: 356px;
+  }
+
+  .img-container {
+    width: 356px;
+  }
+
+  .footer {
+    padding: 96px 0 96px 108px;
+  }
+
+  .footer .container {
+    display: flex;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 72px;
+  }
+
+  .footer-logo-container {
+    margin-right: 0;
+  }
+
+  .footer-a {
+    font-weight: 400;
+  }
+
+  .social-list {
+    padding-left: 0;
+  }
+  .social-container {
+    margin-right: 100px;
   }
 }
