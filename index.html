@@ -504,9 +504,10 @@
             </div>
         </div>
     </footer>
-    <div class="modal-window-container">
+    <div class="modal-window-container" id="modal-window-container">
         <div class="modal-window">
-            <button type="button" class="modal-close-window">
+            <button type="button" class="modal-close-window"
+                onclick="document.getElementById('modal-window-container').style.display='none'">
                 <svg class="modal-window-button-close" width="8" height="8">
                     <use href="./images/icons.svg#icon-close">
 
