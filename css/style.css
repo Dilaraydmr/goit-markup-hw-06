@@ -945,13 +945,21 @@ body {
   }
   .section-four {
     display: flex;
+    padding: 0;
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
   .section-four-li {
     display: flex;
     flex-direction: column;
+    min-width: 100%;
   }
   .footer-email {
     display: flex;
@@ -965,6 +973,12 @@ body {
     justify-content: center;
     align-items: center;
     gap: 72px;
+  }
+  .social-list {
+    padding: 0;
+  }
+  .footer-logo-container {
+    margin: 0%;
   }
   .footer-a {
     display: flex;
@@ -990,7 +1004,7 @@ body {
     margin: 16px 61px 96px 61px;
   }
   .mobile {
-    display: block;
+    /* display: block; */
     position: fixed;
     top: 0;
     left: 0;
@@ -1065,5 +1079,11 @@ body {
     top: 0;
     right: 0;
     z-index: 99;
+  }
+  .address-bar {
+    display: none;
+  }
+  .nav-bar {
+    display: none;
   }
 }
